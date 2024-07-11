@@ -1,6 +1,6 @@
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.jetbrainsKotlinAndroid)
+    alias(libs.plugins.runify.android.application.compose)
+    alias(libs.plugins.runify.jvm.ktor)
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.mapsplatform.secrets.plugin)
 }
