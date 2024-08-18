@@ -1,6 +1,6 @@
 [versions]
-agp = "8.5.1"
-androidTools = "31.5.1"
+agp = "8.5.2"
+androidTools = "31.5.2"
 core = "1.10.3"
 #noinspection RiskyLibrary
 playCore = "1.10.3"
@@ -13,32 +13,32 @@ coreKtx = "1.13.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
-activityCompose = "1.9.0"
+activityCompose = "1.9.1"
 ktor = "2.3.12"
 ktorClientLogging = "2.3.8"
 ktorServerCallLogging = "2.3.11"
-koin = "3.5.5"
-lifecycleRuntimeKtx = "2.8.3"
+koin = "3.5.6"
+lifecycleRuntimeKtx = "2.8.4"
 composeBom = "2024.06.00"
 materialIconsExtended = "1.6.8"
 navigationCompose = "2.7.7"
 securityCryptoKtx = "1.1.0-alpha06"
 timber = "5.0.1"
-ksp = "2.0.0-1.0.22"
+ksp = "2.0.0-1.0.23"
 room = "2.6.1"
 appcompat = "1.7.0"
 material = "1.12.0"
 org-jetbrains-kotlin-jvm = "2.0.0"
 maps = "4.3.3"
-coroutines = "1.8.0"
+coroutines = "1.8.1"
 gmsLocation = "21.3.0"
 mapsUtils = "5.0.0"
 bson = "5.1.2"
-work = "2.9.0"
-kotlinx-serialization = "1.6.3"
+work = "2.9.1"
+kotlinx-serialization = "1.7.0"
 secretsPlugin = "2.0.1"
 playServicesMaps = "19.0.0"
-annotation = "1.8.0"
+annotation = "1.8.2"
 
 # Project versions
 projectApplicationId = "com.jamie.runify"
@@ -47,6 +47,8 @@ projectMinSdkVersion = "25"
 projectTargetSdkVersion = "34"
 projectCompileSdkVersion = "34"
 projectVersionCode = "1"
+junitKtx = "1.2.1"
+monitor = "1.7.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -106,6 +108,8 @@ android-tools-common = { group = "com.android.tools", name = "common", version.r
 kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 ksp-gradlePlugin = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
 room-gradlePlugin = { group = "androidx.room", name = "room-gradle-plugin", version.ref = "room" }
+androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junitKtx" }
+androidx-monitor = { group = "androidx.test", name = "monitor", version.ref = "monitor" }
 
 
 [plugins]

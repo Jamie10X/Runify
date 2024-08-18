@@ -2,6 +2,7 @@ import com.android.build.api.dsl.LibraryExtension
 import com.jamie.convention.ExtensionType
 import com.jamie.convention.configureBuildTypes
 import com.jamie.convention.configureKotlinAndroid
+import com.jamie.convention.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
@@ -33,6 +34,8 @@ class AndroidLibraryConventionPlugin: Plugin<Project> {
 
             dependencies {
                 "testImplementation"(kotlin("test"))
+                "implementation"(libs.findLibrary("androidx.monitor").get())
+                "implementation"(libs.findLibrary("androidx.junit.ktx").get())
             }
         }
     }
