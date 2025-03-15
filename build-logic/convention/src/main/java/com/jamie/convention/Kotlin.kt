@@ -20,8 +20,8 @@ internal fun Project.configureKotlinAndroid(
 
         compileOptions {
             isCoreLibraryDesugaringEnabled = true
-            sourceCompatibility = JavaVersion.VERSION_20
-            targetCompatibility = JavaVersion.VERSION_20
+            sourceCompatibility = JavaVersion.VERSION_17
+            targetCompatibility = JavaVersion.VERSION_17
         }
     }
 
@@ -34,8 +34,8 @@ internal fun Project.configureKotlinAndroid(
 
 internal fun Project.configureKotlinJvm() {
     extensions.configure<JavaPluginExtension> {
-        sourceCompatibility = JavaVersion.VERSION_20
-        targetCompatibility = JavaVersion.VERSION_20
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     configureKotlin()
 }
@@ -43,7 +43,7 @@ internal fun Project.configureKotlinJvm() {
 private fun Project.configureKotlin() {
     tasks.withType<KotlinJvmCompile>().configureEach {
         compilerOptions {
-            jvmTarget.set(JvmTarget.JVM_20)
+            jvmTarget.set(JvmTarget.JVM_17)
         }
     }
 }
