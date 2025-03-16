@@ -1,6 +1,5 @@
 plugins {
     alias(libs.plugins.runify.android.feature.ui)
-    alias(libs.plugins.compose.compiler)
 }
 
 android {

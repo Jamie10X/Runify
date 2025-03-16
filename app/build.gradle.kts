@@ -1,6 +1,5 @@
 plugins {
     alias(libs.plugins.runify.android.application.compose)
-    alias(libs.plugins.compose.compiler)
     alias(libs.plugins.runify.jvm.ktor)
     alias(libs.plugins.mapsplatform.secrets.plugin)
 }
